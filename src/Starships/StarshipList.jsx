@@ -9,13 +9,14 @@ const StarshipList = () => {
     const fetchStarshipList = async () => {
       const starshipData = await getStarshipList()
       setStarshipList(starshipData.results)
+      console.log(starshipData);
     }
     fetchStarshipList()
   },[])
 
   return(
     <div className="starship-cards">
-      {starshipList.length ?
+      {starshipList?.length ?
         <>
           {starshipList.map(starship => 
             <div key={starship.index}>
@@ -25,7 +26,7 @@ const StarshipList = () => {
         </>
         :
         <>
-          <h3>Loading starhips...</h3>
+          <h3>Loading starships...</h3>
         </>
       }
     </div>
