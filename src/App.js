@@ -1,6 +1,7 @@
 import './App.css';
 import { Routes, Route} from 'react-router-dom'
 import StarshipList from './Starships/StarshipList';
+import StarshipPage from './Starships/StarshipPage';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<StarshipList/>}/>
+        <Route path="/starship" element={<StarshipPage />} />
       </Routes>
     </>
   );
