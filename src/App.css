@@ -36,6 +36,60 @@
   background-color: #282c34;
 }
 
+.starship-cards{
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 380px;
+  align-items: center;
+  color: white;
+}
+
+.individual-cards{
+  font-size:24px;
+  display: flex;
+  margin-right: 16px;
+  background: #2f4f4f;
+  color: white;
+  text-decoration: none;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+Link:link {
+  color: white;
+}
+
+Link:visited {
+  color: white;
+}
+
+Link:hover {
+  color: white;
+}
+
+Link:active {
+  color: white;
+}
+
+
+
+.starship-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 160px;
+  margin-left: 530px;
+  border-radius: 8px;
+  padding-bottom: 16px;
+  background-color: #2f4f4f;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

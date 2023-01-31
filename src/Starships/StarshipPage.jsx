@@ -17,11 +17,11 @@ const StarshipPage = () => {
   }, [location.state.starship.url])
 
   return (
-    <>
+    <div className="starship-details">
       <h3>Name: {starshipPage.name}</h3>
       <h3>Model: {starshipPage.model}</h3>
       <Link to="/">Return</Link>
-    </>
+    </div>
   )
 }
 
